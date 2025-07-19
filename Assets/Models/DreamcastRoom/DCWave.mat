@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: M_postProcessingOutlineMaterial
-  m_Shader: {fileID: -6465566751694194690, guid: 1a2653ffd195b194999b8d3d0f26a503,
+  m_Name: DCWave
+  m_Shader: {fileID: -6465566751694194690, guid: 6a90078e24b704a418ec89ad33b8caf8,
     type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -17,19 +17,24 @@ Material:
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
+  m_CustomRenderQueue: 2988
   stringTagMap: {}
-  disabledShaderPasses: []
+  disabledShaderPasses:
+  - MOTIONVECTORS
   m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
     - _BaseMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 52b768df2b5b77e44911c227b0eabf03, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BumpMap:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: dad5ebc3dacfba945ab62f6352650bbc, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Color:
+        m_Texture: {fileID: 2800000, guid: b54255e9ca9ae434b8ceaf340e03bd09, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -48,12 +53,32 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MREA:
+        m_Texture: {fileID: 2800000, guid: 93493570be360ca468bf4a24cdb5a336, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 52b768df2b5b77e44911c227b0eabf03, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MapNormals:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Noise:
+        m_Texture: {fileID: 2800000, guid: b0604844cc5f8434fbf9d93b3503c45d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseTexture:
+        m_Texture: {fileID: 2800000, guid: b0604844cc5f8434fbf9d93b3503c45d, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _Normal:
+        m_Texture: {fileID: 2800000, guid: d4695e8a50458244fbef38d5bfe5d904, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
@@ -64,19 +89,11 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _RT:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _RenderTextureUI:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _StencilMaskTex:
+    - _gradient:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
@@ -95,61 +112,84 @@ Material:
     m_Ints: []
     m_Floats:
     - _AlphaClip: 0
-    - _AlphaToMask: 0
     - _Blend: 0
-    - _BlendModePreserveSpecular: 1
     - _BumpScale: 1
     - _ClearCoatMask: 0
     - _ClearCoatSmoothness: 0
     - _Cull: 2
     - _Cutoff: 0.5
-    - _DephVizTweak: 0
-    - _Depht: 0
-    - _DepthNormalThreshold: 0.5
-    - _DepthNormalThresholdScale: 7
-    - _DepthThreshold: 0.5
     - _DetailAlbedoMapScale: 1
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _DstBlendAlpha: 0
-    - _EdgeLightScale: 8
     - _EnvironmentReflections: 1
-    - _Exclude_Bright_Areas_from_normal: 1
-    - _ForceRenderTextureTransparency: 0
-    - _GlossMapScale: 0
-    - _Glossiness: 0
-    - _GlossyReflections: 0
+    - _FadeDropoff: -9.71
+    - _FadeLimit: 0.08
+    - _FixedDistance: 0
+    - _Float: 1
+    - _FresnelIntensity: 2.08
+    - _FresnelStrengh: 0.02
+    - _FresnelStrengh_1: 0.02
+    - _FresnellCoverage: 0.01
+    - _GlossMapScale: 1
+    - _Glossiness: 0.4472136
+    - _GlossyReflections: 1
+    - _GradientIntensity: 1
+    - _GradientSize: 0.12
+    - _HeightIntensity: 0.2
     - _Metallic: 0
-    - _Normal: 0
-    - _NormalThreshold: 0.608
-    - _NormalWorldToView: 0
+    - _Mode: 0
+    - _NoiseContrast: 2
+    - _NoiseIntensity: 2.1
+    - _NoiseRepeat: 0.05
     - _OcclusionStrength: 1
-    - _Parallax: 0.005
-    - _QueueOffset: 0
+    - _Parallax: 0.02
+    - _QueueControl: 0
+    - _QueueOffset: -12
     - _ReceiveShadows: 1
-    - _Scale: 1
-    - _Smoothness: 0.5
+    - _Rings: 0
+    - _Ripples: 3
+    - _Smoothness: 0.4472136
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
-    - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _Visualizer: 0
-    - _WhiteExclusion: 0.613
+    - _Tile: -0.17
+    - _UVSec: 0
+    - _WaveNormalIntensity: 1
+    - _WaveOffset: 4.8
     - _WorkflowMode: 1
+    - _WorldSpaceScale: 12.96
     - _ZWrite: 1
+    - _colorfadetoblack: 0
+    - _frecuencia: 1
+    - _grdientContrast: 1
+    - _maptilling: 0
+    - _multiply: 3.62
+    - _ok: 0.2
+    - _power: 2.5
+    - _refectionStreng: 0
+    - _test: 0
+    - _timeMulty: 9.4
     m_Colors:
+    - _Atractor: {r: 0, g: 0, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _EdgelightColor: {r: 0.6053756, g: 0.6524798, b: 0.7169812, a: 0}
+    - _ColorA: {r: 0.43137255, g: 0.63683206, b: 0.78431374, a: 1}
+    - _ColorB: {r: 0.18867922, g: 0.17888926, b: 0.17888926, a: 1}
+    - _ColorC: {r: 0.084905684, g: 0.084905684, b: 0.084905684, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _LineColor: {r: 0.3276492, g: 0.2811499, b: 0.509434, a: 1}
+    - _PositionGadientContrastA: {r: 0, g: 1, b: 0, a: 0}
+    - _PositionGadientContrastB: {r: 0, g: 1, b: 0, a: 0}
+    - _Ratio: {r: 0, g: 0, b: 0, a: 0}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _Vector2: {r: -6.06, g: -1.2, b: 0, a: 0}
-    - _remapNormalDisparity: {r: 0, g: 1, b: 0, a: 0}
+    - _WaveFadeIn: {r: 0, g: 0, b: 0, a: 0}
+    - _WaveFadeOut: {r: 0, g: 0, b: 0, a: 0}
+    - _WaveFadeRemap: {r: 0, g: 0, b: 0, a: 0}
+    - _center: {r: 0.5, g: 1, b: 1, a: 0}
+    - _glassColor: {r: 0, g: 10.63874, b: 16, a: 0}
   m_BuildTextureStacks: []
   m_AllowLocking: 1
---- !u!114 &7525084140243850310
+--- !u!114 &312976838108307902
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -161,4 +201,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d0353a89b1f911e48b9e16bdc9f2e058, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  version: 7
+  version: 9
