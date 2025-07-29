@@ -187,7 +187,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Surface0ColorRamp:
-        m_Texture: {fileID: 2800000, guid: 17ed1ad76a50ec3439d864a4cdc6357c, type: 3}
+        m_Texture: {fileID: 2800000, guid: 019c1569d72c95b48a45b69dc491130f, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _Surface1ColorRamp:
@@ -315,7 +315,7 @@ Material:
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _EmmisiveAOColor: {r: 1.4142133, g: 0, b: 0, a: 0}
     - _EmmisiveColor: {r: 1.8945124, g: 0.8182391, b: 0, a: 0}
-    - _FarColor: {r: 0.7125366, g: 0.6728373, b: 0.754717, a: 0}
+    - _FarColor: {r: 0.68778926, g: 0.75952727, b: 0.9056604, a: 0}
     - _Mat3Emmisive: {r: 8.47419, g: 5.6471605, b: 1.9078015, a: 0}
     - _ShadowColor: {r: 0.6524982, g: 0.63746, b: 0.7075472, a: 1}
     - _ShadowTransitionColor: {r: 0.9622642, g: 0.84878963, b: 0.8721521, a: 1}

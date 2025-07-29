@@ -2729,7 +2729,7 @@ MonoBehaviour:
   m_VolumeTrigger: {fileID: 0}
   m_VolumeFrameworkUpdateModeOption: 2
   m_RenderPostProcessing: 1
-  m_Antialiasing: 2
+  m_Antialiasing: 1
   m_AntialiasingQuality: 2
   m_StopNaN: 1
   m_Dithering: 1
@@ -14462,6 +14462,11 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 87c62071e6cbd79429d2312610d93fdd, type: 2}
+    - target: {fileID: -219758835815371972, guid: e02ed8314f6991044a7350635caa4cf1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2714
+      objectReference: {fileID: 0}
     - target: {fileID: -88982457164789036, guid: e02ed8314f6991044a7350635caa4cf1,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
@@ -14567,6 +14572,16 @@ PrefabInstance:
       propertyPath: 'm_Materials.Array.data[0]'
       value: 
       objectReference: {fileID: 2100000, guid: 87c62071e6cbd79429d2312610d93fdd, type: 2}
+    - target: {fileID: 4182574313443744394, guid: e02ed8314f6991044a7350635caa4cf1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4182574313443744394, guid: e02ed8314f6991044a7350635caa4cf1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.2714
+      objectReference: {fileID: 0}
     - target: {fileID: 4207595706206209125, guid: e02ed8314f6991044a7350635caa4cf1,
         type: 3}
       propertyPath: 'm_Materials.Array.data[0]'
